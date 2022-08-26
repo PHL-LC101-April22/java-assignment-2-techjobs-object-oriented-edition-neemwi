@@ -60,6 +60,9 @@ public class Job {
     }
 
     public String getName() {
+        if (name.equals("")){
+            return "Data not available";
+        }
         return name;
     }
 
