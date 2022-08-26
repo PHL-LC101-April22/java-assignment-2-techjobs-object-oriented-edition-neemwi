@@ -24,7 +24,11 @@ public abstract class JobField {
 
 
     public String getValue() {
+        if(value.equals("")){
+            return "Data not available";
+        }
         return value;
+
     }
 
     public void setValue(String value) {

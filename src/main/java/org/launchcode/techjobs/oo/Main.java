@@ -20,8 +20,9 @@ public class Main {
 
         Job job1 = new Job("Product tester", new Employer("ACME"), new Location("Desert"),
                 new PositionType("Quality Control"),new CoreCompetency("Persistence"));
-        Job job2 = new Job("Product tester", new Employer("ACME"), new Location("Desert"),
-                new PositionType("Quality Control"),new CoreCompetency("Persistence"));
+        Job job2 = new Job("", new Employer(""), new Location("Desert"),
+                new PositionType("Quality Control"),new CoreCompetency(""));
+
 //
 //        System.out.println(job1.getId());
 //        System.out.println(job2.getId());

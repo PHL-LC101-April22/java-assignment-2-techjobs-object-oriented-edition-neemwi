@@ -32,6 +32,8 @@ public class Job {
     }
 
 
+
+
     // TODO: Add custom equals and hashCode methods. Consider two Job objects "equal" when their id fields
     //  match.
 
@@ -99,9 +101,9 @@ public class Job {
 
     @Override
     public String toString() {
-        return  "\n" + "ID: " + id + "\n" + "Name: " + this.name +
-                "\n" + "Employer: " + employer + "\n" + "Location: " + location +
-                "\n" + "Position Type: " + positionType + "\n" + "Core Competency: " +
-               coreCompetency + "\n";
+        return  "\n" + "ID: " + id + "\n" + "Name: " + getName() +
+                "\n" + "Employer: " + employer.getValue() + "\n" + "Location: " + location.getValue() +
+                "\n" + "Position Type: " + positionType.getValue() + "\n" + "Core Competency: " +
+               coreCompetency.getValue() + "\n";
     }
 }

@@ -76,4 +76,10 @@ public class JobTest {
                 job1.getCoreCompetency() + "\n");
     }
 
+    @Test
+    public void testToStringHandlesEmptyField() {
+        Job job1 = new Job("Product tester", new Employer(""), new Location("Desert"),
+                new PositionType("Quality Control"),new CoreCompetency("Persistence"));
+    }
+
 }
