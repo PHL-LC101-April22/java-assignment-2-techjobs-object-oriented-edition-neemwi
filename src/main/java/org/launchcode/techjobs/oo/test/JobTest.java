@@ -37,19 +37,18 @@ public class JobTest {
         assertEquals("Quality Control", "Quality Control");
         assertEquals("Persistence", "Persistence");
         assertTrue(job1.getEmployer() instanceof Employer);
-
         assertTrue(job1.getLocation() instanceof Location);
-
         assertTrue(job1.getPositionType() instanceof PositionType);
-
         assertTrue(job1.getCoreCompetency() instanceof CoreCompetency);
+    }
 
-
-
-
-
-
-
+    @Test
+    public void testJobsForEquality() {
+        Job job1 = new Job("Product tester", new Employer("ACME"), new Location("Desert"),
+                new PositionType("Quality Control"),new CoreCompetency("Persistence"));
+        Job job2 = new Job("Product tester", new Employer("ACME"), new Location("Desert"),
+                new PositionType("Quality Control"),new CoreCompetency("Persistence"));
+        assertFalse(job1.getId() == job2.getId());
     }
 
 }
