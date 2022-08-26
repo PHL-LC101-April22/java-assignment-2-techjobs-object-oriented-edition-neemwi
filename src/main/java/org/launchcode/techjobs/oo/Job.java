@@ -24,6 +24,7 @@ public class Job {
 
     public Job(String name, Employer employer, Location location, PositionType positionType, CoreCompetency coreCompetency) {
         this();
+        this.name = name;
         this.employer = employer;
         this.location = location;
         this.positionType = positionType;
@@ -94,5 +95,13 @@ public class Job {
 
     public void setCoreCompetency(CoreCompetency coreCompetency) {
         this.coreCompetency = coreCompetency;
+    }
+
+    @Override
+    public String toString() {
+        return  "\n" + "ID: " + id + "\n" + "Name: " + this.name +
+                "\n" + "Employer: " + employer + "\n" + "Location: " + location +
+                "\n" + "Position Type: " + positionType + "\n" + "Core Competency: " +
+               coreCompetency + "\n";
     }
 }

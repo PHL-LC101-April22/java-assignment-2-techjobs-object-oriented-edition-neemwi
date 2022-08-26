@@ -18,14 +18,17 @@ public class Main {
 //            System.out.println(job);
 //        }
 
-//        Job job1 = new Job("Product tester", new Employer("ACME"), new Location("Desert"),
-//                new PositionType("Quality Control"),new CoreCompetency("Persistence"));
-//        Job job2 = new Job("Product tester", new Employer("ACME"), new Location("Desert"),
-//                new PositionType("Quality Control"),new CoreCompetency("Persistence"));
+        Job job1 = new Job("Product tester", new Employer("ACME"), new Location("Desert"),
+                new PositionType("Quality Control"),new CoreCompetency("Persistence"));
+        Job job2 = new Job("Product tester", new Employer("ACME"), new Location("Desert"),
+                new PositionType("Quality Control"),new CoreCompetency("Persistence"));
 //
 //        System.out.println(job1.getId());
 //        System.out.println(job2.getId());
 //        System.out.println(job1.getCoreCompetency().getValue());
+        System.out.println(job2);
+        System.out.println(job2.getName());
+
     }
 
 }
